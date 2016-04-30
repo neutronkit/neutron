@@ -28,5 +28,8 @@
     "coveralls": "^2.11.9",
     "electron-prebuilt": "^0.37.8",
     "istanbul": "^0.4.3"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3"
   }
 }
