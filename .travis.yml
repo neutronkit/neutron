@@ -19,3 +19,4 @@ install:
 
 matrix:
   fast_finish: true
+  
