@@ -1,0 +1,26 @@
+{
+  "name": "neutronkit",
+  "version": "0.0.1",
+  "description": "The easiest way to build Electron apps for OS X, Windows, Linux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neutronkit/neutron.git"
+  },
+  "keywords": [
+    "neutron",
+    "neutronkit",
+    "electron",
+    "desktop",
+    "app"
+  ],
+  "author": "arifcakiroglu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neutronkit/neutron/issues"
+  },
+  "homepage": "https://github.com/neutronkit/neutron#readme"
+}
