@@ -4,7 +4,7 @@
   "description": "The easiest way to build Electron apps for OS X, Windows, Linux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron dist/boilerplate"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/neutronkit/neutron/issues"
   },
-  "homepage": "https://github.com/neutronkit/neutron#readme"
+  "homepage": "https://github.com/neutronkit/neutron#readme",
+  "dependencies": {
+    "electron-prebuilt": "^0.37.8"
+  }
 }
