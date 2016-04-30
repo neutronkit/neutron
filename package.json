@@ -4,7 +4,8 @@
   "description": "The easiest way to build Electron apps for OS X, Windows, Linux",
   "main": "index.js",
   "scripts": {
-    "start": "electron dist/boilerplate"
+    "start": "electron dist/boilerplate",
+    "test": "istanbul cover index.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,8 @@
   "homepage": "https://github.com/neutronkit/neutron#readme",
   "dependencies": {
     "electron-prebuilt": "^0.37.8"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.9"
   }
 }
