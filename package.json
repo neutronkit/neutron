@@ -24,10 +24,9 @@
     "url": "https://github.com/neutronkit/neutron/issues"
   },
   "homepage": "https://github.com/neutronkit/neutron#readme",
-  "dependencies": {
-    "electron-prebuilt": "^0.37.8"
-  },
   "devDependencies": {
-    "coveralls": "^2.11.9"
+    "coveralls": "^2.11.9",
+    "electron-prebuilt": "^0.37.8",
+    "istanbul": "^0.4.3"
   }
 }
