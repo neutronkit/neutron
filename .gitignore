@@ -5,3 +5,4 @@ bower_components
 Thumbs.db
 .cache
 .idea
+.sass-cache
