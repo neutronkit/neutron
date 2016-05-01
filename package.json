@@ -27,8 +27,10 @@
   "devDependencies": {
     "electron-prebuilt": "^0.37.8",
     "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "jshint-stylish": "^2.2.0"
   },
   "dependencies": {
     "jquery": "^2.2.3"

@@ -17,7 +17,18 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+    jshint: {
+      files: ['Gruntfile.js', 'app/**/*.js', 'dist/**/*.js'],
+      options: {
+        esversion: 6,
+        reporter: require('jshint-stylish')
+      }
+    },
 		watch: {
+      jshint :{
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint']
+      },
 			css: {
 				files: '**/*.scss',
 				tasks: ['sass']
@@ -27,5 +38,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask('default',['watch']);
-}
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
+	grunt.registerTask('default',['watch','jshint']);
+};
