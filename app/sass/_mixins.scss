@@ -25,3 +25,15 @@
       -ms-border-radius: $radius;
           border-radius: $radius;
 }
+
+/*
+ * User Select
+ */
+@mixin user-select($param) {
+  -webkit-touch-callout: $param;
+  -webkit-user-select: $param;
+  -khtml-user-select: $param;
+  -moz-user-select: $param;
+  -ms-user-select: $param;
+  user-select: $param;
+}
