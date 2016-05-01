@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron dist/boilerplate",
+    "build": "grunt",
     "test": "istanbul cover index.js && rm -rf ./coverage"
   },
   "repository": {
@@ -27,6 +28,9 @@
   "devDependencies": {
     "coveralls": "^2.11.9",
     "electron-prebuilt": "^0.37.8",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
     "istanbul": "^0.4.3"
   },
   "dependencies": {
