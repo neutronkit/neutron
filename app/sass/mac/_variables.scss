@@ -11,5 +11,5 @@ $text-blue:                   $blue !default;
 $text-gray-dark:              $gray-dark !default;
 
 // OS X fonts
-$body-font: "Helvetica Nue", arial, sans-serif !default;
-$body-font-size: 14px !default;
+$body-font: system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif !default;
+$body-font-size: 12px !default;

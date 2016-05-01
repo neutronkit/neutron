@@ -1,0 +1,41 @@
+.table{
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  text-align: left;
+  border: 1px solid #bebebe;
+  thead{
+    tr{
+      background-color: #f5f5f5;
+      th{
+        padding: 2px 15px;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+  }
+  tbody{
+    tr{
+      &:nth-child(even){
+        background-color: #f5f5f5;
+      }
+      &:active{
+        background-color: #015cdc;
+        color:#fff
+      }
+      td{
+        padding: 2px 15px;
+        border-right: 1px solid #ddd;
+      }
+    }
+  }
+  tfoot{
+    tr{
+      background-color: #f5f5f5;
+      td{
+
+      }
+    }
+  }
+}
