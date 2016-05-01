@@ -2,11 +2,10 @@
   "name": "neutronkit",
   "version": "0.0.1",
   "description": "The easiest way to build Electron apps for OS X, Windows, Linux",
-  "main": "index.js",
   "scripts": {
     "start": "electron dist/boilerplate",
     "build": "grunt",
-    "test": "istanbul cover index.js && rm -rf ./coverage"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

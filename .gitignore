@@ -6,3 +6,4 @@ Thumbs.db
 .cache
 .idea
 .sass-cache
+coverage
