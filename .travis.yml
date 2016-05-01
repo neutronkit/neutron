@@ -19,4 +19,8 @@ install:
 
 matrix:
   fast_finish: true
-  
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
