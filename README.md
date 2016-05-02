@@ -4,3 +4,18 @@
 
 
 The easiest way to build Electron apps for OS X, Windows, Linux
+
+```
+│ Dist
+├── Boilerplate                    
+│   ├── main.js          
+│   ├── package.json         
+│   └── index.html  
+├── css                    
+│   ├── neutron.css          
+│   ├── neutron-mac.css 
+│   └── neutron-linux.css
+│   └── neutron-windows.css
+│   └── neutron-walaa.css
+└── js
+```
