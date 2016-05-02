@@ -5,6 +5,27 @@
 
 The easiest way to build Electron apps for OS X, Windows, Linux
 
+
+###Development
+* Install node dependencies
+
+```
+npm install
+```
+
+* Open the example app
+
+```
+npm start
+```
+
+* Modifying & Watch Sass files
+
+```
+npm build
+```
+
+
 ```
 │ Dist
 ├── Boilerplate                    
