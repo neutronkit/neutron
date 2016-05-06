@@ -27,7 +27,7 @@ npm build
 ```
 
 
-###Folder Structure
+###File organization
 ```
 │ Dist
 ├── Boilerplate                    
