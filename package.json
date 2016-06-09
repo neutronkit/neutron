@@ -1,6 +1,6 @@
 {
   "name": "neutronkit",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "The easiest way to build Electron apps for OS X, Windows, Linux",
   "scripts": {
     "start": "electron dist/boilerplate",
