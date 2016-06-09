@@ -33,6 +33,6 @@
     "jshint-stylish": "^2.2.0"
   },
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^3.0.0"
   }
 }
