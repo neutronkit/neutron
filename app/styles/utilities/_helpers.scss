@@ -1,0 +1,50 @@
+/*!
+ * Helpers
+ */
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.fl{
+	float: #{$left}
+}
+
+.fr{
+	float: #{$right};
+}
+
+.fn{
+	float: none;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.padding{
+	padding: $padding
+}
+
+.padding-small{
+	padding: $padding-small
+}
+
+.padding-large{
+	padding: $padding-large
+}

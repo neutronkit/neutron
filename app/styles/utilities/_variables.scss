@@ -1,0 +1,103 @@
+
+$spacer: 6px !default;
+$spacers: (
+  0,
+  round($spacer / 2),
+  $spacer,
+  $spacer * 2,
+  $spacer * 4,
+  $spacer * 6,
+  $spacer * 8
+) !default;
+
+$spacer-1: nth($spacers, 2) !default; // 3px
+$spacer-2: nth($spacers, 3) !default; // 6px
+$spacer-3: nth($spacers, 4) !default; // 12px
+$spacer-4: nth($spacers, 5) !default; // 24px
+$spacer-5: nth($spacers, 6) !default; // 36px
+$spacer-6: nth($spacers, 7) !default; // 48px
+
+
+// ---- Global sizes ----
+$container-width: 	1000px !default;
+$container-lg: 			1170px !default;
+$grid-gutter:     	10px !default;
+
+
+
+// ---- Colors ----
+
+// Brand
+
+$primary:					  #db0962	!default;
+$secondary: 				#6dc8c3 !default;
+$facebook: 					#3a5795 !default;
+
+$blue:              #4078c0 !default;
+$gray-dark:         #333    !default;
+$gray-light:        #999    !default;
+$gray-normal:				#757575 !default;
+$gray:              #666 	  !default;
+$green:             #6cc644 !default;
+$orange:            #c9510c !default;
+$purple:            #6e5494 !default;
+$red:               #bd2c00 !default;
+$white:             #fff 	!default;
+
+// Background colors
+$bg-blue-light:     #f2f8fa !default;
+$bg-blue:           $blue !default;
+$bg-white: 					$white !default;
+$bg-gray:     		  #dfdfdf !default;
+$bg-gray-dark:      $gray-dark !default;
+$bg-gray-light:     #fafafa !default;
+
+
+
+// Border colors
+$border-gray-dark:  #ddd !default;
+$border-gray-light: #eee !default;
+$border-gray:       #e5e5e5 !default;
+$border-gray-normal:$gray-normal !default;
+
+// Text colors
+$text-primary:      $primary !default;
+$text-blue:         $blue !default;
+$text-green:        darken($green, 10%) !default;
+$text-white:				$white !default;
+$text-gray: 				$gray !default;
+$text-gray-dark: 		$gray-dark !default;
+$text-gray-light:   $gray-light !default;
+$text-gray-normal:  $gray-normal !default;
+
+// Heading sizes
+$h00-size: 					48px !default;
+$h0-size: 					40px !default;
+$h1-size: 					32px !default;
+$h2-size: 					24px !default;
+$h3-size: 					20px !default;
+$h4-size: 					16px !default;
+$h5-size: 					14px !default;
+$h6-size: 					12px !default;
+
+// Font sizes, weight & line height
+$font-weight-bold:  600 !default;
+$font-weight-normal:400 !default;
+$font-weight-light: 300 !default;
+$font-size-small:   12px !default;
+$font-size-large:   16px !default;
+$font-size-x-large: 18px !default;
+$font-size-huge: 		20px !default;
+
+$padding-small: 		5px !default;
+$padding: 					10px !default;
+$padding-large: 		20px !default;
+
+$lh-default: 				1.5 !default;
+
+// Font stacks
+$body-font: 				'Open Sans',sans-serif !default;
+
+// The base body size
+$body-font-size: 		14px !default;
+$body-line-height: 	$lh-default !default;

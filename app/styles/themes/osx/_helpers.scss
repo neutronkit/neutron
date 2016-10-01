@@ -1,0 +1,29 @@
+
+// Auto fucus outline
+.auto-focus{
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -9px;
+    bottom: -9px;
+    left: -9px;
+    right: -9px;
+    border-radius: 3px;
+    border: 4px solid rgba( $focus-border, .6 );
+    pointer-events: none;
+    transition: all .2s;
+    opacity: 0;
+  }
+  &.active{
+    border-color: rgba( $focus-border, .6 );
+    &:after {
+      top: -4px;
+      bottom: -4px;
+      left: -4px;
+      right: -4px;
+      opacity: 1;
+    }
+  }
+}

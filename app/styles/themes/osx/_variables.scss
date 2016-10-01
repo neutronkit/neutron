@@ -1,0 +1,47 @@
+
+// Font stacks
+$body-font: 				system,-apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,"Segoe UI",sans-serif !default;
+
+// The base body size
+$body-font-size: 		13px !default;
+
+// Font sizes, weight & line height
+$font-weight-bold:  600 !default;
+$font-weight-normal:400 !default;
+$font-weight-light: 300 !default;
+
+$font-size-small:   11px !default;
+$font-size-normal:  16px !default;
+$font-size-large:   18px !default;
+
+
+// ---- Colors ----
+$primary:					  #005ed4	!default;
+
+// Action colors
+$focus-bg:          #005ed4 !default;
+
+$focus-border:      #78a5dc !default;
+
+// Background colors
+$bg-blue:           #f2f8fa !default;
+$bg-white:          #fff    !default;
+
+$bg-gray:           #f4f3f4 !default;
+$bg-gray-dark:      #f4f3f4 !default;
+$bg-gray-light:     #f4f3f4 !default;
+
+// Border colors
+$border-gray:       #bebdbe !default;
+$border-gray-dark:  #b0b0b0 !default;
+$border-gray-light: #d0d0d0 !default;
+
+
+// Text colors
+$text-primary:      $primary !default;
+$text-white:        #fff     !default;
+$text-black:        #000     !default;
+
+$text-gray:         #333     !default;
+$text-gray-dark:    #222     !default;
+$text-gray-light:   #666     !default;
