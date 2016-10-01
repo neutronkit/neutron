@@ -30,11 +30,7 @@ npm build
 ###File organization
 ```
 │ dist
-├── boilerplate                    
-│   ├── main.js          
-│   ├── package.json         
-│   └── index.html  
-├── css                    
+├── style                    
 │   ├── neutron-all.css          
 │   ├── osx.css
 │   └── windows.css
