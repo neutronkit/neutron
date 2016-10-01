@@ -5,10 +5,11 @@
   min-width: 70px;
   padding: 4px 15px;
   border: 1px solid transparent;
-  border-radius: 6px;
+  border-radius: 5px;
+  background-color: $bg-white;
   background-clip: padding-box;
-  background-image: linear-gradient(#5ea8f9 0%, #4e9ffa 25%, #3490fc 50%, #1f82fd 75%, #0975ff 100%);
-  color: #fff;
+  background-image: none;
+  color: $text-gray;
   font-size: 13px;
   font-weight: 500;
   line-height: 13px;
@@ -16,6 +17,7 @@
   cursor: default;
   vertical-align: middle;
   user-select: none;
+  position: relative;
 
   &:after {
     position: absolute;
@@ -24,13 +26,14 @@
     bottom: -1px;
     left: -1px;
     border-radius: 5px;
-    background-image: linear-gradient(#4096f8 50%, #05f 100%);
+    background-image: linear-gradient(#c9c9c9 50%, #adacad 100%);
     content: '';
     z-index: -1;
   }
 
   &:active:hover {
     background-image: linear-gradient(#3d8cff 0%, #3683f8 25%, #2273ed 50%, #1468e4 75%, #0d5cd5 100%);
+    color: $text-white;
 
     &:after {
       background-image: linear-gradient(#3080fc 50%, #1048af 100%);
