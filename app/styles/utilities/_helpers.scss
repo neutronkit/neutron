@@ -1,7 +1,8 @@
 /*!
  * Helpers
  */
-.show {
+
+ .show {
   display: block !important;
 }
 
@@ -13,38 +14,26 @@
   visibility: hidden;
 }
 
-.fl{
-	float: #{$left}
+.fl {
+	float: #{$left};
 }
 
-.fr{
+.fr {
 	float: #{$right};
 }
 
-.fn{
+.fn {
 	float: none;
 }
 
-.text-left{
-	text-align: left;
+.text-left {
+	text-align: #{$left};
 }
 
-.text-center{
-	text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.text-right{
-	text-align: right;
-}
-
-.padding{
-	padding: $padding
-}
-
-.padding-small{
-	padding: $padding-small
-}
-
-.padding-large{
-	padding: $padding-large
+.text-right {
+	text-align: #{$right};
 }

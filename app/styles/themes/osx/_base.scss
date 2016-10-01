@@ -1,10 +1,17 @@
 
-html{
+html {
   -webkit-font-smoothing: antialiased;
 }
 
-body{
+body {
+  color: $text-black;
   font-family: $body-font;
   font-size: $body-font-size;
-  color: $text-black;
+}
+
+* {
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
 }
