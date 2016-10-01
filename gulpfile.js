@@ -6,6 +6,8 @@ const del = require('del');
 const wiredep = require('wiredep').stream;
 
 const $ = gulpLoadPlugins();
+const scsslint = require('gulp-scss-lint');
+
 const reload = browserSync.reload;
 
 gulp.task('styles', () => {
@@ -57,6 +59,16 @@ gulp.task('lint:test', () => {
   })
     .pipe(gulp.dest('test/spec/**/*.js'));
 });
+
+
+gulp.task('scsslint', () => {
+  return gulp.src('app/styles/**/*.scss')
+    .pipe(scsslint({
+      'config': 'scss-lint.yml',
+      'reporterOutputFormat': 'Checkstyle',
+    }))
+});
+
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
