@@ -10,6 +10,8 @@ const scsslint = require('gulp-scss-lint');
 
 const reload = browserSync.reload;
 
+const child_process = require('child_process');
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
@@ -100,8 +102,9 @@ gulp.task('fonts', () => {
 
 gulp.task('extras', () => {
   return gulp.src([
-    'app/*.*',
-    '!app/*.html'
+    '.tmp/**/*.js',
+    '.tmp/**/*.css',
+    'app/*.html'
   ], {
     dot: true
   }).pipe(gulp.dest('dist'));
@@ -133,12 +136,31 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
+gulp.task('serve:electron', ['build'], () => {
+  var  questions = [{
+       type: "list",
+       name: "example",
+       message: "Choose an example:",
+       choices: [ "components", "tree", "ftp" ],
+    }
+  ];
+
+  gulp.src('examples')
+    .pipe(
+      $.prompt.prompt(questions, function(res){
+        child_process.exec(`electron examples/${res.example}`)
+          .stdout.on('data', (data) => {})
+        process.exit(1);
+      })
+    )
+});
+
 gulp.task('serve:dist', () => {
   browserSync({
     notify: false,
     port: 9000,
     server: {
-      baseDir: ['dist']
+      baseDir: ['dist','.tmp']
     }
   });
 });
@@ -178,7 +200,8 @@ gulp.task('wiredep', () => {
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src(['dist/**/*'])
+              .pipe($.size({title: 'build', gzip: true}));
 });
 
 gulp.task('default', ['clean'], () => {
