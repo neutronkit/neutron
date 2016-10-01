@@ -1,7 +1,0 @@
-{
-  "name": "neutronkit-boilerplate",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  }
-}

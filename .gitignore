@@ -1,9 +1,0 @@
-node_modules
-bower_components
-.DS_Store
-._*
-Thumbs.db
-.cache
-.idea
-.sass-cache
-coverage
