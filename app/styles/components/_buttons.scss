@@ -1,62 +1,39 @@
+
 .btn {
-  position: relative;
   display: inline-block;
-  padding: 6px 12px;
+  position: relative;
+  min-width: 70px;
+  padding: 4px 15px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-clip: padding-box;
+  background-image: linear-gradient(#5ea8f9 0%, #4e9ffa 25%, #3490fc 50%, #1f82fd 75%, #0975ff 100%);
+  color: #fff;
   font-size: 13px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 500;
+  line-height: 13px;
   white-space: nowrap;
+  cursor: default;
   vertical-align: middle;
-  cursor: pointer;
   user-select: none;
-  background-color: #eee;
-  background-image: linear-gradient(#fcfcfc, #eee);
-  border: 1px solid #d5d5d5;
-  border-radius: 3px;
-  -webkit-appearance: none;
 
-  &:focus {
-    text-decoration: none;
-    border-color: #51a7e8;
-    outline: none;
-    box-shadow: 0 0 5px rgba(81, 167, 232, 0.5);
+  &:after {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border-radius: 5px;
+    background-image: linear-gradient(#4096f8 50%, #05f 100%);
+    content: '';
+    z-index: -1;
   }
 
-  &:focus:hover,
-  &.selected:focus {
-    border-color: #51a7e8;
-  }
+  &:active:hover {
+    background-image: linear-gradient(#3d8cff 0%, #3683f8 25%, #2273ed 50%, #1468e4 75%, #0d5cd5 100%);
 
-  &:hover,
-  &:active {
-    text-decoration: none;
-    background-color: #ddd;
-    background-image: linear-gradient(#eee, #ddd);
-    border-color: #ccc;
-  }
-
-  &:active,
-  &.selected {
-    background-color: #dcdcdc;
-    background-image: none;
-    border-color: #b5b5b5;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  &.selected:hover {
-    background-color: darken(#dcdcdc, 5%);
-  }
-
-  &:disabled,
-  &.disabled {
-    &,
-    &:hover {
-      color: rgba(102, 102, 102, 0.5);
-      cursor: default;
-      background-color: rgba(229, 229, 229, 0.5);
-      background-image: none;
-      border-color: rgba(197, 197, 197, 0.5);
-      box-shadow: none;
+    &:after {
+      background-image: linear-gradient(#3080fc 50%, #1048af 100%);
     }
   }
 }
