@@ -3,25 +3,25 @@
   background-image: linear-gradient(#5ea8f9 0%, #4e9ffa 25%, #3490fc 50%, #1f82fd 75%, #0975ff 100%);
   color: #fff;
 
-  .blurred &{
-    background-image: none;
-    background-color: $bg-gray-light;
-    color: $text-gray;
-
-    &:after {
-      background-image: linear-gradient(#bbb 50%, #999 100%);
-    }
-  }
-
-  &:after {
+  &:before {
     background-image: linear-gradient(#4096f8 50%, #05f 100%);
   }
 
   &:active:hover {
     background-image: linear-gradient(#3d8cff 0%, #3683f8 25%, #2273ed 50%, #1468e4 75%, #0d5cd5 100%);
 
-    &:after {
+    &:before {
       background-image: linear-gradient(#3080fc 50%, #1048af 100%);
+    }
+  }
+  
+  .blurred &{
+    background-image: none;
+    background-color: $bg-gray-light;
+    color: $text-gray;
+
+    &:before {
+      background-image: linear-gradient(#bbb 50%, #999 100%);
     }
   }
 }

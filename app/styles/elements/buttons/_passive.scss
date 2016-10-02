@@ -1,9 +1,8 @@
-
 .btn-passive {
   background-color: $bg-white;
   color: $text-gray;
 
-  &:after {
+  &:before {
     background-image: linear-gradient(#c9c9c9 50%, #adacad 100%);
   }
 
@@ -12,7 +11,7 @@
     background-color: $bg-gray-light;
     color: $text-gray;
 
-    &:after {
+    &:before {
       background-image: linear-gradient(#bbb 50%, #999 100%);
     }
   }

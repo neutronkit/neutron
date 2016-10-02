@@ -2,25 +2,25 @@
   background-image: linear-gradient( lighten($positive, 10%) 0%, lighten($positive, 10%) 25%, lighten($positive, 5%) 50%, $positive 75%, darken($positive, 2%) 100%);
   color: #fff;
 
-  .blurred &{
-    background-image: none;
-    background-color: $bg-gray-light;
-    color: $text-gray;
-
-    &:after {
-      background-image: linear-gradient(#bbb 50%, #999 100%);
-    }
-  }
-
-  &:after {
+  &:before {
     background-image: linear-gradient($positive 50%, darken($positive, 18%) 100%);
   }
 
   &:active:hover {
     background-image: linear-gradient($positive 0%, darken($positive, 3%)  50%, darken($positive, 10%) 100%);
 
-    &:after {
+    &:before {
       background-image: linear-gradient(darken($positive, 5%) 50%, darken($positive, 18%) 100%);
+    }
+  }
+
+  .blurred &{
+    background-image: none;
+    background-color: $bg-gray-light;
+    color: $text-gray;
+
+    &:before {
+      background-image: linear-gradient(#bbb 50%, #999 100%);
     }
   }
 }
