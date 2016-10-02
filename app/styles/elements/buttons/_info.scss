@@ -1,0 +1,29 @@
+
+
+
+.btn-info {
+  background-image: linear-gradient( lighten($info, 10%) 0%, lighten($info, 10%) 25%, lighten($info, 5%) 50%, $info 75%, darken($info, 2%) 100%);
+  color: #fff;
+
+  .blurred &{
+    background-image: none;
+    background-color: $bg-gray-light;
+    color: $text-gray;
+
+    &:after {
+      background-image: linear-gradient(#bbb 50%, #999 100%);
+    }
+  }
+
+  &:after {
+    background-image: linear-gradient($info 50%, darken($info, 18%) 100%);
+  }
+
+  &:active:hover {
+    background-image: linear-gradient($info 0%, darken($info, 4%)  50%, darken($info, 8%) 100%);
+
+    &:after {
+      background-image: linear-gradient(darken($info, 5%) 50%, darken($info, 18%) 100%);
+    }
+  }
+}

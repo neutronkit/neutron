@@ -1,0 +1,26 @@
+.btn-warning {
+  background-image: linear-gradient( lighten($warning, 3%) 0%, lighten($warning, 5%) 50%, $warning 75%, darken($warning, 2%) 100%);
+  color: #fff;
+
+  .blurred &{
+    background-image: none;
+    background-color: $bg-gray-light;
+    color: $text-gray;
+
+    &:after {
+      background-image: linear-gradient(#bbb 50%, #999 100%);
+    }
+  }
+
+  &:after {
+    background-image: linear-gradient($warning 50%, darken($warning, 18%) 100%);
+  }
+
+  &:active:hover {
+    background-image: linear-gradient($warning 0%, darken($warning, 3%)  50%, darken($warning, 10%) 100%);
+
+    &:after {
+      background-image: linear-gradient(darken($warning, 5%) 50%, darken($warning, 18%) 100%);
+    }
+  }
+}
