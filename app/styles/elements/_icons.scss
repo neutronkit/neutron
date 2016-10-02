@@ -1,0 +1,25 @@
+.icon{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  stroke: $black;
+
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+
+  &.black {
+    stroke: $black;
+  }
+  &.gray svg{
+    stroke: $gray;
+  }
+  &.white svg{
+    stroke: $white;
+  }
+
+  &.small svg{
+
+  }
+}
