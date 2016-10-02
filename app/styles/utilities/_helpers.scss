@@ -37,3 +37,8 @@
 .text-right {
 	text-align: #{$right};
 }
+
+.clearfix,
+.cf{
+    @include clearfix();
+}

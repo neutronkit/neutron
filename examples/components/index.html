@@ -10,71 +10,77 @@
     <link rel="stylesheet" href="../../.tmp/styles/osx.css">
 
   </head>
-  <body>
+  <body style="background-color: #ececec">
+    <div class="window">
+      <div class="toolbar">
+        <div class="controls">
+          <i close></i>
+          <i minimize></i>
+          <i></i>
+        </div>
+        <div class="title">
+          Window Title
+        </div>
+      </div>
+      <div style="padding:10px;">
 
-    <h3>Buttons</h3>
+        <button class="btn">Default</button>
+        <button class="btn btn-passive">Passive</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-positive">Positive</button>
+        <button class="btn btn-negative">Negative</button>
+        <button class="btn btn-warning">Warning</button>
+        <br><br>
 
-    <button class="btn">Default</button>
-    <button class="btn btn-passive">Passive</button>
-    <button class="btn btn-primary">Primary</button>
-    <button class="btn btn-positive">Positive</button>
-    <button class="btn btn-negative">Negative</button>
-    <button class="btn btn-warning">Warning</button>
-    <button class="btn btn-info">Info</button>
+        <table class="table ">
+          <thead>
+            <tr>
+              <th width="20">Hide</th>
+              <th>Item</th>
+              <th>Kind</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr tabindex="0">
+              <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td>Google Chrome</td>
+              <td>Application</td>
+            </tr>
+            <tr tabindex="0">
+              <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td>Dropbox</td>
+              <td>Application</td>
+            </tr>
+            <tr tabindex="0">
+              <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td>Dropbox</td>
+              <td>Application</td>
+            </tr>
+            <tr tabindex="0">
+              <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td>Dropbox</td>
+              <td>Application</td>
+            </tr>
+            <tr tabindex="0">
+              <td class="text-center">
+                <input type="checkbox">
+              </td>
+              <td>Dropbox</td>
+              <td>Application</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-
-
-
-
-    <h3>Table</h3>
-
-    <br><br>
-    <table class="table auto-focus active">
-      <thead>
-        <tr>
-          <th width="20">Hide</th>
-          <th>Item</th>
-          <th>Kind</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr tabindex="0">
-          <td class="text-center">
-            <input type="checkbox">
-          </td>
-          <td>Google Chrome</td>
-          <td>Application</td>
-        </tr>
-        <tr tabindex="0">
-          <td class="text-center">
-            <input type="checkbox">
-          </td>
-          <td>Dropbox</td>
-          <td>Application</td>
-        </tr>
-        <tr tabindex="0">
-          <td class="text-center">
-            <input type="checkbox">
-          </td>
-          <td>Dropbox</td>
-          <td>Application</td>
-        </tr>
-        <tr tabindex="0">
-          <td class="text-center">
-            <input type="checkbox">
-          </td>
-          <td>Dropbox</td>
-          <td>Application</td>
-        </tr>
-        <tr tabindex="0">
-          <td class="text-center">
-            <input type="checkbox">
-          </td>
-          <td>Dropbox</td>
-          <td>Application</td>
-        </tr>
-      </tbody>
-    </table>
+    </div>
 
     <script src="../../.tmp/scripts/main.js"></script>
   </body>

@@ -48,3 +48,27 @@ $text-black:        #000     !default;
 $text-gray:         #333     !default;
 $text-gray-dark:    #222     !default;
 $text-gray-light:   #666     !default;
+
+
+// Components
+
+// Toolbars
+$toolbar-border-gray-dark:         #a4a4a4  !default;
+$toolbar-border-gray-light:        #e3e3e3  !default;
+$toolbar-border-gray:              #cecece  !default;
+$toolbar-shadow-light:             #f3f3f3  !default;
+
+$disabled-controls:                 #dcdcdc !default;
+$disabled-controls-border:          darken($disabled-controls, 7%) !default;
+
+$close:            #ff544d !default;
+$close-border:     darken($close, 5%) !default;
+
+$minimize:         #ffb429 !default;
+$minimize-border:  darken($minimize, 10%) !default;
+
+$maximize:         #24c339 !default;
+$maximize-border:  darken($maximize, 5%) !default;
+
+$text-title:       #555;
+$text-title-light: lighten($text-title, 30%);

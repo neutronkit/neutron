@@ -1,0 +1,62 @@
+
+
+.toolbar{
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  background-image: linear-gradient($toolbar-border-gray-light 0, $toolbar-border-gray 100%);
+  border-bottom: 1px solid $toolbar-border-gray-dark;
+  border-top: 1px solid $toolbar-shadow-light;
+  border-radius: 4px 4px 0 0;
+  padding: 10px;
+  @include clearfix();
+  -webkit-app-region: drag ;
+
+  .blurred &{
+    background-image: none;
+    background-color: #f5f4f5;
+    border-top-color: transparent;
+    border-bottom: 1px solid #d0d0d0;
+  }
+
+  .controls{
+    i{
+      border:1px solid transparent;
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-radius: 50%;
+      float: left;
+      margin-right: 8px;
+      .blurred &,
+      &{
+        background-color: $disabled-controls;
+        border-color: $disabled-controls-border;
+      }
+    }
+    [close]{
+      background-color: $close;
+      border-color: $close-border;
+    }
+    [minimize]{
+      background-color: $minimize;
+      border-color: $minimize-border;
+    }
+    [maximize]{
+      background-color: $maximize;
+      border-color: $maximize-border;
+    }
+  }
+
+
+  .title{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: $text-title;
+    .blurred &{
+      color: $text-title-light;
+    }
+  }
+}
