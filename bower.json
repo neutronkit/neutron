@@ -1,6 +1,22 @@
 {
   "name": "neutronkit",
-  "version": "0.0.2",
+  "version": "0.0.4",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "neutron",
+    "neutronkit",
+    "electron",
+    "desktop",
+    "app"
+  ],
+  "repository": {
+		"type": "git",
+		"url": "git://github.com/neutronkit/neutron.git"
+	},
+  "main": [
+		"dist/style/neutron-all.css",
+		"dist/scripts/main.js"
+	],
   "ignore": [
       "node_modules",
       "examples",
