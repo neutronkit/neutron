@@ -3,6 +3,16 @@
   background-image: linear-gradient(#5ea8f9 0%, #4e9ffa 25%, #3490fc 50%, #1f82fd 75%, #0975ff 100%);
   color: #fff;
 
+  .blurred &{
+    background-image: none;
+    background-color: $bg-gray-light;
+    color: $text-gray;
+
+    &:after {
+      background-image: linear-gradient(#bbb 50%, #999 100%);
+    }
+  }
+
   &:after {
     background-image: linear-gradient(#4096f8 50%, #05f 100%);
   }
