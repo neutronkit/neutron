@@ -9,5 +9,5 @@ app.on('ready', () => {
       frame: false
   });
 
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+  mainWindow.loadURL('http://localhost:9000');
 });
