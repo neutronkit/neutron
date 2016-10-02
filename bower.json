@@ -6,6 +6,7 @@
       "examples",
       "test",
       "bower_components",
-      ".tmp"
+      ".tmp",
+      ".gitignore"
   ]
 }
