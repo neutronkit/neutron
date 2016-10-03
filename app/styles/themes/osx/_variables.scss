@@ -7,6 +7,7 @@ $body-font-size: 		13px !default;
 
 // Font sizes, weight & line height
 $font-weight-bold:  600 !default;
+$font-weight-semi-bold:  500 !default;
 $font-weight-normal:400 !default;
 $font-weight-light: 300 !default;
 
@@ -14,6 +15,8 @@ $font-size-small:   11px !default;
 $font-size-normal:  16px !default;
 $font-size-large:   18px !default;
 
+// Grid
+$grid-gutter:       10px !default;
 
 // ---- Colors ----
 $primary:           #005ed4 !default;
@@ -38,8 +41,8 @@ $focus-border:      #78a5dc !default;
 $bg-white:          #fff    !default;
 
 $bg-gray:           #f4f3f4 !default;
-$bg-gray-dark:      #f4f3f4 !default;
-$bg-gray-light:     #f4f3f4 !default;
+$bg-gray-dark:      #ccc !default;
+$bg-gray-light:     #ebebeb !default;
 
 // Border colors
 $border-gray:       #bebdbe !default;
@@ -54,6 +57,7 @@ $text-black:        #000     !default;
 
 $text-gray:         #333     !default;
 $text-gray-dark:    #222     !default;
+$text-gray-normal:  #555     !default;
 $text-gray-light:   #666     !default;
 
 

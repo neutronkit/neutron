@@ -1,5 +1,5 @@
 .btn-passive {
-  background-color: $bg-white;
+  background-color: #fafafa;
   color: $text-gray;
 
   &:before {
@@ -15,4 +15,16 @@
       background-image: linear-gradient(#bbb 50%, #999 100%);
     }
   }
+
+  .blurred &{
+    background-image: none;
+    background-color: #f5f4f5;
+
+    &:before {
+      background-image: none;
+      background-color: #d6d6d6;
+    }
+  }
+
+
 }

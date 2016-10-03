@@ -2,7 +2,7 @@
  * Helpers
  */
 
- .show {
+.show {
   display: block !important;
 }
 
@@ -41,4 +41,12 @@
 .clearfix,
 .cf{
     @include clearfix();
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+.padding{
+  padding: 10px !important;
 }

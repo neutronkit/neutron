@@ -1,13 +1,30 @@
 
 html {
   -webkit-font-smoothing: antialiased;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   color: $text-black;
   font-family: $body-font;
   font-size: $body-font-size;
   margin: 0;
+  overflow: hidden;
+}
+
+*,
+img{
+  -webkit-user-drag: text;
+  cursor: default;
+  user-select:none;
+}
+
+input,
+textarea,
+.selectable{
+  user-select: auto;
+  cursor: text;
 }
 
 * {
