@@ -1,16 +1,27 @@
 
 
 .toolbar{
-  position: relative;
   width: 100%;
-  min-height: 20px;
+  min-height: 16px;
   background-image: linear-gradient($toolbar-border-gray-light 0, $toolbar-border-gray 100%);
   border-bottom: 1px solid $toolbar-border-gray-dark;
   border-top: 1px solid $toolbar-shadow-light;
   border-radius: 4px 4px 0 0;
-  padding: 10px;
+  padding: 4px 7px;
+  z-index: 1;
   @include clearfix();
-  -webkit-app-region: drag ;
+
+  &.mini{
+    padding: 2px 6px;
+  }
+
+  &.small{
+    padding: 2px 7px;
+  }
+
+  &.huge{
+    padding: 4px 7px 6px;
+  }
 
   .blurred &{
     background-image: none;
@@ -19,44 +30,105 @@
     border-bottom: 1px solid #d0d0d0;
   }
 
-  .controls{
-    i{
-      border:1px solid transparent;
-      width: 12px;
-      height: 12px;
-      display: inline-block;
-      border-radius: 50%;
-      float: left;
-      margin-right: 8px;
-      .blurred &,
-      &{
-        background-color: $disabled-controls;
-        border-color: $disabled-controls-border;
-      }
-    }
-    [close]{
-      background-color: $close;
-      border-color: $close-border;
-    }
-    [minimize]{
-      background-color: $minimize;
-      border-color: $minimize-border;
-    }
-    [maximize]{
-      background-color: $maximize;
-      border-color: $maximize-border;
-    }
-  }
-
-
   .title{
     position: absolute;
     left: 0;
+    top: 0;
     right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+
     color: $text-title;
+
+    .title-content{
+      display: table-cell;
+      vertical-align: middle;
+    }
+
     .blurred &{
       color: $text-title-light;
+    }
+  }
+
+  &.huge .title{
+    bottom:initial;
+    padding-top: 3px;
+  }
+}
+
+
+.window-controls {
+  padding: 2px;
+  @include clearfix();
+
+  .mini &{
+    padding: 0;
+    i{
+      width: 10px;
+      height:10px;
+    }
+  }
+
+  .large &{
+    padding: 5px;
+  }
+
+  .huge &{
+    padding: 0;
+  }
+
+  i {
+    border:1px solid transparent;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 8px;
+    .blurred &,
+    & {
+      background-color: $disabled-controls;
+      border-color: $disabled-controls-border;
+    }
+  }
+
+  [close] {
+    background-color: $close;
+    border-color: $close-border;
+  }
+
+  [minimize] {
+    background-color: $minimize;
+    border-color: $minimize-border;
+  }
+  [maximize]{
+    background-color: $maximize;
+    border-color: $maximize-border;
+  }
+}
+
+// Toolbar actions
+.toolbar-actions{
+  margin-top: 6px;
+  height: 38px;
+
+  .sub-title{
+    -webkit-app-region: no-drag ;
+    position: relative;
+    &:after{
+      position: absolute;
+      left: 0;
+      right:0;
+      bottom: -14px;
+      font-size: $font-size-small;
+      content: attr(data-name);
+      .blurred &{
+        opacity: 0.5
+      }
     }
   }
 }
