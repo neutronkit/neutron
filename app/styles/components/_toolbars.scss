@@ -8,7 +8,7 @@
   border-top: 1px solid $toolbar-shadow-light;
   border-radius: 4px 4px 0 0;
   padding: 4px 7px;
-  z-index: 1;
+  z-index: 100;
   @include clearfix();
 
   &.mini{
@@ -63,6 +63,7 @@
 
 .window-controls {
   padding: 2px;
+
   @include clearfix();
 
   .mini &{
@@ -83,6 +84,7 @@
 
   i {
     border:1px solid transparent;
+    -webkit-app-region: no-drag;
     width: 12px;
     height: 12px;
     display: inline-block;
@@ -117,7 +119,7 @@
   height: 38px;
 
   .sub-title{
-    -webkit-app-region: no-drag ;
+    -webkit-app-region: no-drag;
     position: relative;
     &:after{
       position: absolute;
