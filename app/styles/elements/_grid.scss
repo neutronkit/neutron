@@ -1,0 +1,42 @@
+[container] {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+[grid] {
+  margin-right: -$grid-gutter;
+  margin-left: -$grid-gutter;
+  @include clearfix;
+}
+
+[grid] > * {
+  float: $left;
+  padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
+}
+
+// Columns
+[one] 		{ width: (1 / 12 * 100%); }
+[two]		  { width: (2 / 12 * 100%); }
+[three] 	{ width: (3 / 12 * 100%); }
+[four] 	  { width: (4 / 12 * 100%); }
+[five] 	  { width: (5 / 12 * 100%); }
+[six] 		{ width: (6 / 12 * 100%); }
+[seven] 	{ width: (7 / 12 * 100%); }
+[eight] 	{ width: (8 / 12 * 100%); }
+[nine] 	  { width: (9 / 12 * 100%); }
+[ten] 		{ width: (10 / 12 * 100%); }
+[eleven]  { width: (11 / 12 * 100%); }
+[twelve]  { width: 100%; }
+
+// Percentage
+
+[one-third] 		{ width: 33.333333%; }
+[two-thirds]  	{ width: 66.666667%; }
+[one-fourth]   	{ width: 25%; }
+[one-half] 			{ width: 50%; }
+[three-fourths] { width: 75%; }
+[one-fifth] 		{ width: 20%; }
+[two-fifths] 		{ width: 40%; }
+[three-fifths] 	{ width: 60%; }
