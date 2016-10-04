@@ -7,7 +7,7 @@
 [![Code Climate](https://codeclimate.com/github/neutronkit/neutron/badges/gpa.svg)](https://codeclimate.com/github/neutronkit/neutron) [![Known Vulnerabilities](https://snyk.io/test/npm/neutronkit/badge.svg)](https://snyk.io/test/npm/neutronkit)
 
 
-The easiest way to build Electron apps for OS X, Windows, Linux
+The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 
 ####First shot :heart_eyes:
 
