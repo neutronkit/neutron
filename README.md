@@ -24,13 +24,13 @@ npm install
 ####Open the example app
 
 ```
-npm start
+gulp serve && gulp serve:electron
 ```
 
 ####Modifying & Watch Sass files
 
 ```
-npm build
+gulp serve
 ```
 
 
