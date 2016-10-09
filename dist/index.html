@@ -14,7 +14,7 @@
     <!-- endbuild -->
 
   </head>
-  <body>
+  <body id="test">
 
     <div class="window has-toolbar-huge">
       <!-- Begin: toolbar -->
@@ -61,7 +61,6 @@
       <!-- Begin: modal -->
       <div class="modal">
         <label for="">Go to the folder:</label>
-        
         <button class="btn btn-primary fr">Go</button>
         <button class="btn fr" style="margin-right:10px">Cancel</button>
       </div>
@@ -217,6 +216,7 @@
 
       document.getElementsByTagName('body')[0].appendChild(el.cloneNode(true));
     </script>
+    <script src="scripts/neutron.dom.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
