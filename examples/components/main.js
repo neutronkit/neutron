@@ -6,8 +6,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
       height: 600,
       width: 900,
-      frame: false,
-      transparent: true
+      frame: false
   });
 
   mainWindow.loadURL('http://localhost:9000');
