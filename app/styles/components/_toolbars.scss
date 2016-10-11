@@ -61,6 +61,7 @@
 
 .window-controls {
   padding: 2px;
+  display: inline-block;
 
   @include clearfix();
 
@@ -89,25 +90,129 @@
     border-radius: 50%;
     float: left;
     margin-right: 8px;
+    text-align: center;
+    font-size: 6px;
+    position: relative;
     .blurred &,
     & {
       background-color: $disabled-controls;
       border-color: $disabled-controls-border;
     }
+    &:last-child{
+      margin-right: 0;
+    }
   }
 
   [close] {
-    background-color: $close;
+    background-color: #ff564f;
     border-color: $close-border;
+    &:active{
+      background-color: darken(#ff564f, 20%);
+      border-color: darken(#ff564f, 20%);
+    }
   }
 
   [minimize] {
     background-color: $minimize;
     border-color: $minimize-border;
+    &:active{
+      background-color: darken($minimize, 20%);
+      border-color: darken($minimize, 20%);
+    }
   }
+
   [maximize]{
     background-color: $maximize;
     border-color: $maximize-border;
+    &:active{
+      background-color: darken($maximize, 10%);
+      border-color: darken($maximize, 10%);
+    }
+  }
+
+
+
+  &:hover{
+    [close],
+    [minimize]{
+      &:before,
+      &:after{
+        border-radius: 2px;
+      }
+    }
+
+    [close]{
+      &:before,
+      &:after{
+        position: absolute;
+        left:1px;
+        top:4px;
+
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        background-color: #750100;
+        transform: rotate(-45deg);
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        background-color: #750100;
+        transform: rotate(45deg);
+      }
+    }
+
+    [minimize] {
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 8px;
+        height: 2px;
+        background-color: #8e4d01;
+      }
+    }
+
+
+    [maximize]{
+      &:active{
+        &:after{
+          background-color: darken($maximize, 10%);
+        }
+      }
+      &:before,
+      &:after{
+        position: absolute;
+        left:1px;
+        top:4px;
+      }
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #015a00;
+        top: 2px;
+        left:2px;
+        z-index: 1;
+      }
+      &:after{
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        background-color: $maximize;
+        transform: rotate(45deg);
+        z-index: 2;
+        top: 4px;
+        left:0;
+      }
+    }
+
   }
 }
 
