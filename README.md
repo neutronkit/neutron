@@ -11,7 +11,10 @@ The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 
 ####First shot :heart_eyes:
 
-[![NeutronKit Logo](http://neutronkit.com/img/screenshot-1.png)](http://neutronkit.com)
+[![NeutronKit Screenshot 2](http://neutronkit.com/img/screenshot-2.png)](http://neutronkit.com)
+
+[![NeutronKit Screenshot](http://neutronkit.com/img/screenshot-1.png)](http://neutronkit.com)
+
 
 ###Development
 
