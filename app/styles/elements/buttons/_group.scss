@@ -1,5 +1,14 @@
 .button-groups {
-
+  .blurred & {
+    .btn-primary:before,
+    .btn-positive:before,
+    .btn-info:before,
+    .btn-negative:before,
+    .btn-warning:before{
+      background-image: none;
+      background-color: #d6d6d6;
+    }
+  }
   >.btn {
     position: relative;
     float: left;
