@@ -1,0 +1,90 @@
+.button-groups {
+
+  >.btn {
+    position: relative;
+    float: left;
+
+    &:first-child{
+      &.btn-primary,
+      &.btn-positive,
+      &.btn-info,
+      &.btn-negative,
+      &.btn-warning{
+        &:after,
+        &+.btn:after{
+          display: none
+        }
+      }
+
+    }
+
+    &:first-child + .btn:last-child{
+      &:after{
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        content: "";
+        border-left:1px solid #e5e5e5;
+      }
+      &.btn-primary,
+      &.btn-positive,
+      &.btn-info,
+      &.btn-negative,
+      &.btn-warning{
+        &:after,
+        &+.btn:after{
+          display: none
+        }
+      }
+    }
+    &:not(:first-child):not(:last-child){
+      border-radius: 0;
+
+      &:before{
+        border-radius: 0;
+        left:0;
+        right:0;
+      }
+
+      &.btn-primary,
+      &.btn-positive,
+      &.btn-info,
+      &.btn-negative,
+      &.btn-warning{
+        &:after,
+        &+.btn:after{
+          display: none
+        }
+      }
+      &:after{
+        position: absolute;
+        left:0;
+        top:0;
+        height: 100%;
+        content: "";
+        border-left:1px solid #e5e5e5;
+      }
+    }
+
+    &:first-child:not(:last-child){
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      &:before{
+        right:0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+
+    &:last-child:not(:first-child){
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      &:before{
+        left:0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+}
