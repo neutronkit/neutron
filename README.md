@@ -9,7 +9,7 @@
 
 The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 
-####First shot :heart_eyes:
+:snail::snail::snail::snail:
 
 [![NeutronKit Screenshot 2](http://neutronkit.com/img/screenshot-2.png)](http://neutronkit.com)
 
