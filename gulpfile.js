@@ -138,10 +138,10 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
 
 gulp.task('serve:electron', ['build'], () => {
   var  questions = [{
-       type: "list",
-       name: "example",
-       message: "Choose an example:",
-       choices: [ "components", "tree", "ftp" ],
+       type: 'list',
+       name: 'example',
+       message: 'Choose an example:',
+       choices: [ 'components', 'tree', 'ftp' ],
     }
   ];
 
