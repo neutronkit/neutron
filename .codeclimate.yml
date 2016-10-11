@@ -1,0 +1,5 @@
+engines:
+  duplication:
+    enabled: false
+  eslint:
+    enabled: false
