@@ -16,7 +16,7 @@
     }
   }
 
-  .blurred &{
+  .blurred & {
     background-image: none;
     background-color: #f5f4f5;
 
@@ -25,6 +25,10 @@
       background-color: #d6d6d6;
     }
   }
+}
 
-
+.blurred .button-groups{
+  .btn:before {
+    background-image: linear-gradient(#c9c9c9 50%, #adacad 100%) !important;
+  }
 }
