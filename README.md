@@ -21,8 +21,7 @@ The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 ####Install node dependencies
 
 ```
-npm i electron-prebuilt gulp -g
-npm install
+npm i electron gulp -g && npm i
 ```
 
 ####Open the example app
