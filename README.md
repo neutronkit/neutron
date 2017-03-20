@@ -16,28 +16,28 @@ The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 [![NeutronKit Screenshot](http://neutronkit.com/img/screenshot-1.png)](http://neutronkit.com)
 
 
-###Development
+### Development
 
-####Install node dependencies
+#### Install node dependencies
 
 ```
 npm i electron gulp -g && npm i
 ```
 
-####Open the example app
+#### Open the example app
 
 ```
 gulp serve && gulp serve:electron
 ```
 
-####Modifying & Watch Sass files
+#### Modifying & Watch Sass files
 
 ```
 gulp serve
 ```
 
 
-###File organization
+### File organization
 ```
 │ dist
 ├── style                    
