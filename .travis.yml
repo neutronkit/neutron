@@ -11,7 +11,7 @@ before_install:
   - npm --version
 
 install:
-  - travis_retry npm install
+  - rm -rf node_modules && npm install
 
 matrix:
   fast_finish: true
