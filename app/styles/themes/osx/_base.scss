@@ -1,6 +1,5 @@
 
 html {
-  -webkit-font-smoothing: antialiased;
   height: 100%;
 }
 
@@ -11,6 +10,8 @@ body {
   font-size: $body-font-size;
   margin: 0;
   overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *,

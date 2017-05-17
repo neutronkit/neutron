@@ -1,6 +1,6 @@
 
 // Font stacks
-$body-font: 				system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif !default;
+$body-font: system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, "Segoe UI", sans-serif !default;
 
 // The base body size
 $body-font-size: 		13px !default;
@@ -83,3 +83,8 @@ $maximize-border:  darken($maximize, 5%) !default;
 
 $text-title:       #555;
 $text-title-light: lighten($text-title, 30%);
+
+// Tabs
+$tab-bg: 			#d8d6d8 !default;
+
+
