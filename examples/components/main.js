@@ -9,5 +9,5 @@ app.on('ready', () => {
       frame: false
   });
 
-  mainWindow.loadURL('http://localhost:9000');
+  mainWindow.loadURL('http://localhost:9001');
 });
