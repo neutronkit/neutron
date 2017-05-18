@@ -11,9 +11,9 @@ The easiest way to build Electron apps for OS X, Windows, Linux & Kiosk
 
 :snail::snail::snail::snail:
 
-[![NeutronKit Screenshot 2](http://neutronkit.com/img/screenshot-2.png)](http://neutronkit.com)
+[![NeutronKit Screenshot 2](http://neutronkit.com/img/ss-1.png)](http://neutronkit.com)
 
-[![NeutronKit Screenshot](http://neutronkit.com/img/screenshot-1.png)](http://neutronkit.com)
+[![NeutronKit Screenshot](http://neutronkit.com/img/ss-2.png)](http://neutronkit.com)
 
 
 ### Development
