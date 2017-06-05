@@ -1,0 +1,16 @@
+
+<svg width="16px" height="15px" viewBox="18 364 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon---Neptune" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(18.000000, 364.000000)">
+        <rect id="Stand-3" fill="#A8A8A8" x="5" y="14.5" width="6" height="0.5"></rect>
+        <rect id="Stand-2" fill="#D6D6D6" x="5.5" y="14" width="5" height="0.5"></rect>
+        <rect id="Stand-1" fill="#BDBDBD" x="6" y="13" width="4" height="1"></rect>
+        <rect id="Chin-Outer" fill="#9C9C9C" x="0" y="10.5" width="16" height="2.5"></rect>
+        <rect id="Chin-Inner" fill="#E7E7E7" x="1" y="10.5" width="14" height="1.5"></rect>
+        <rect id="Badge" fill="#D2D2D2" x="7.5" y="11" width="1" height="0.5"></rect>
+        <rect id="Display-Outer" fill="#777777" x="0" y="0" width="16" height="10.5" rx="2"></rect>
+        <rect id="Display-Inner" fill="#DCDCDC" x="1.5" y="1.5" width="13" height="7.5"></rect>
+    </g>
+</svg>

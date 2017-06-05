@@ -1,16 +1,75 @@
 
+const path = require('path');
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync');
-const del = require('del');
-const wiredep = require('wiredep').stream;
-
 const $ = gulpLoadPlugins();
-const scsslint = require('gulp-scss-lint');
 
+const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 
+const del = require('del');
+const wiredep = require('wiredep').stream;
+const filesToJson = require('gulp-files-to-json')
+const scsslint = require('gulp-scss-lint');
 const child_process = require('child_process');
+
+
+const webpack = require('webpack');
+const webpackConfig = {
+  context: __dirname + "/app",
+  entry: "./scripts/main.js",
+  output: {
+      path: __dirname + "/.tmp/scripts",
+      filename: "main.js"
+  },
+  cache: {},
+  module: {
+    rules: [
+      {
+        test: /\.json$/,
+        use: 'json-loader'
+      }
+    ]
+  }
+};
+
+const webpackCompiler = webpack(webpackConfig);
+
+
+gulp.task('scripts', (done) => {
+  webpackCompiler.run(function (error, result) {
+    if (error) {
+      $.util.log($.util.colors.red(error));
+    }
+    result = result.toJson();
+    if (result.errors.length) {
+      result.errors.forEach(function (error) {
+        $.util.log($.util.colors.red(error));
+      });
+    }
+    done();
+  });
+});
+
+gulp.task('svgmin', function(){
+  gulp.src('app/icons/src/**/*.svg')
+  .pipe($.svgmin({
+    plugins: [
+      {removeTitle: true},
+      {removeDimensions: true},
+      {mergePaths: true},
+      {removeUselessStrokeAndFill: true}
+      ]
+    })
+  )
+  .pipe(gulp.dest('app/icons/dist'));
+})
+
+gulp.task('icons', function () {
+    return gulp.src('app/icons/dist/**/*.svg')
+    .pipe(filesToJson('icons.json'))
+    .pipe(gulp.dest('app/scripts'));
+});
 
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
@@ -27,15 +86,8 @@ gulp.task('styles', () => {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('scripts', () => {
-  return gulp.src('app/scripts/**/*.js')
-    .pipe($.plumber())
-    .pipe($.sourcemaps.init())
-    .pipe($.babel())
-    .pipe($.sourcemaps.write('.'))
-    .pipe(gulp.dest('.tmp/scripts'))
-    .pipe(reload({stream: true}));
-});
+
+
 
 function lint(files, options) {
   return gulp.src(files)
@@ -112,7 +164,7 @@ gulp.task('extras', () => {
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
 
-gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
+gulp.task('serve', ['styles', 'icons', 'scripts', 'fonts'], () => {
   browserSync({
     notify: false,
     port: 9000,
@@ -124,6 +176,25 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
     }
   });
 
+  function webpackCache(e) {
+    var keys = Object.keys(webpackConfig.cache);
+    var key, matchedKey;
+    for (var keyIndex = 0; keyIndex < keys.length; keyIndex++) {
+      key = keys[keyIndex];
+      if (key.indexOf(e.path) !== -1) {
+        matchedKey = key;
+        break;
+      }
+    }
+    if (matchedKey) {
+      delete webpackConfig.cache[matchedKey];
+    }
+  }
+
+  gulp.task('scripts:watch', ['scripts'], reload);
+  gulp.watch('app/scripts/**/*.js', ['scripts:watch']).on('change', webpackCache);
+
+
   gulp.watch([
     'app/*.html',
     'app/images/**/*',
@@ -131,6 +202,8 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   ]).on('change', reload);
 
   gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/icons/dist/**/*', ['icons', 'scripts']);
+  gulp.watch('app/icons/src/**/*', ['svgmin']);
   gulp.watch('app/scripts/**/*.js', ['scripts']);
   gulp.watch('app/fonts/**/*', ['fonts']);
   gulp.watch('bower.json', ['wiredep', 'fonts']);

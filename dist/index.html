@@ -14,8 +14,7 @@
     <!-- endbuild -->
 
   </head>
-  <body id="test">
-
+  <body>
     <div class="window has-toolbar-huge">
       <!-- Begin: toolbar -->
       <div class="toolbar huge draggable">
@@ -33,25 +32,39 @@
         <div class="toolbar-actions">
             <div grid>
               <div two>
-                <button class="btn btn-passive large sub-title" data-name="View">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Zoom">aaa</button>
+                <button class="btn btn-passive sub-title" data-name="View"><img src="images/1.png"></button>
+                <button class="btn btn-passive sub-title" data-name="Zoom">100%</button>
               </div>
               <div five class="text-center">
-                <button class="btn btn-passive large sub-title" data-name="Insert">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Table">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Chart">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Text">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Shape">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Media">aaa</button>
-                <button class="btn btn-passive large sub-title" data-name="Comment">aaa</button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Insert">
+                   <img src="images/1.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Table">
+                   <img src="images/2.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Chart">
+                   <img src="images/3.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Text">
+                   <img src="images/4.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Shape">
+                  <img src="images/7.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Media">
+                   <img src="images/5.png">
+                </button>
+                <button class="btn btn-passive btn-large sub-title" data-name="Comment">
+                   <img src="images/6.png">
+                </button>
               </div>
               <div three class="text-center">
-                <button class="btn btn-passive large sub-title" data-name="Collaborate">aaa</button>
+                <button class="btn btn-passive large sub-title" data-name="Collaborate"><img src="images/1.png"></button>
               </div>
               <div two class="text-right">
-                <div class="button-groups">
-                  <button class="btn btn-passive large sub-title" data-name="Format">.</button>
-                  <button class="btn btn-passive large sub-title" data-name="Documents">.</button>
+                <div class="button-groups fr">
+                  <button class="btn btn-passive large sub-title" data-name="Format"><img src="images/1.png"></button>
+                  <button class="btn btn-passive large sub-title" data-name="Documents"><img src="images/1.png"></button>
                 </div>
               </div>
             </div>
@@ -76,7 +89,7 @@
           <span class="close">
             <i class="icon"><svg><use xlink:href="#icon-close"/></svg></i>
           </span>
-          Tab item .active
+          Tab item active
         </div>
         <div class="tab-item">
           <span class="close">
@@ -103,53 +116,33 @@
 
       <!-- Begin: n-content -->
       <div  class="n-content" >
-
-
-
         <aside class="sidebar pane no-padding">
           <div class="pane-2">
             <nav class="nav-group">
             <span class="nav-title">Favorites</span>
+            <span class="nav-item">AirDrop</span>
+            <span class="nav-item"><n-icon>all-files</n-icon> All My Files</span>
             <span class="nav-item active">Dropbox</span>
             <span class="nav-item ">iCloud Drive</span>
             <span class="nav-item">Documents</span>
-            <span class="nav-item">AirDrop</span>
             <span class="nav-item">Applications</span>
             <span class="nav-item">Desktop</span>
-            <span class="nav-item">Dwonloads</span>
-
+            <span class="nav-item">Downloads</span>
+            <span class="nav-item">Movies</span>
+            <span class="nav-item">Music</span>
+            <span class="nav-item"><n-icon>camera</n-icon>Pictures</span>
             <span class="nav-title">Devices</span>
             <span class="nav-item">Remote Disc</span>
-
+            <span class="nav-item"> Walaa</span>
             <span class="nav-title">Shared</span>
             <span class="nav-item">Arif's Mac</span>
-
+            <span class="nav-item">Windows</span>
             <span class="nav-title">Tags</span>
-            <span class="nav-item">
-              <i class="icon red">
-                <svg><use xlink:href="#circle"/></svg>
-              </i> Red
-            </span>
-            <span class="nav-item">
-              <i class="icon orange">
-                <svg><use xlink:href="#circle"/></svg>
-              </i> Orange
-            </span>
-            <span class="nav-item">
-              <i class="icon yellow">
-                <svg><use xlink:href="#circle"/></svg>
-              </i> Yellow
-            </span>
-            <span class="nav-item">
-              <i class="icon green">
-                <svg><use xlink:href="#circle"/></svg>
-              </i> Green
-            </span>
-            <span class="nav-item">
-              <i class="icon blue">
-                <svg><use xlink:href="#circle"/></svg>
-              </i> Blue
-            </span>
+            <span class="nav-item">Red</span>
+            <span class="nav-item">Orange</span>
+            <span class="nav-item">Yellow</span>
+            <span class="nav-item">Green</span>
+            <span class="nav-item">Blue</span>
 
           </nav>
           </div>
@@ -157,11 +150,54 @@
 
         </aside>
         <main class="pane padding">
+   
+          <n-icon>close</n-icon>
+          <n-icon>camera</n-icon>
+          <n-icon>pc</n-icon>
+          <n-icon>mac</n-icon>
+          <n-icon>all-files</n-icon>
+
+          <h3>Tab view</h3>
+          
+          <div class="tab-view" style="width: 600px">
+            <div class="button-groups">
+              <button class="btn btn-passive">General</button>
+              <button class="btn btn-passive">FileVault</button>
+              <button class="btn btn-passive">Firewall</button>
+              <button class="btn btn-primary">Privacy</button>
+            </div>
+            <div class="content">
+              <p>A login password has been set for this user <button class="btn btn-passive">Change Password...</button></p>
+              <p><input type="checkbox"> Require password
+                <select>
+                  <option>immediately</option>
+                  <option>5 seconds</option>
+                  <option>1 minute</option>
+                  <option>5 minutes</option>
+                  <option>15 minutes</option>
+                  <option>1 hour</option>
+                  <option>4 hours</option>
+                  <option>8 hours</option>
+                </select>
+              </p>
+            </div>
+          </div>
+
+          <h3>Box</h3>
+          <div class="box" style="width: 600px"></div>
 
           <h3>Icon example</h3>
           <i class="icon">
             <svg><use xlink:href="#arrow"/></svg>
           </i>
+
+          <h3>Forms</h3>
+          <h4>Checkbox</h4>
+
+          <i checkbox>
+            <input type="checkbox">
+          </i>
+
 
           <h4>Buttons groups</h4>
 
@@ -258,13 +294,6 @@
       </div>
       <!-- End: n-content -->
     </div>
-    <script>
-      var link = document.querySelector('link[rel="import"]');
-      var content = link.import;
-      var el = content.getElementById('svg');
-
-      document.getElementsByTagName('body')[0].appendChild(el.cloneNode(true));
-    </script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

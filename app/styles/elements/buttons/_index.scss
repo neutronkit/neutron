@@ -9,12 +9,11 @@
 @import 'group';
 
 .btn{
-
   &.btn-small, .btn-small &{
   padding: 2px 10px;
   }
 
   &.btn-large, .btn-large &{
-    padding: 6px 10px;
+    padding: 4px 15px;
   }
 }

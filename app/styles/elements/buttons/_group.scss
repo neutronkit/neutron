@@ -1,4 +1,5 @@
 .button-groups {
+  display: flex;
   .blurred & {
     .btn-primary:before,
     .btn-positive:before,

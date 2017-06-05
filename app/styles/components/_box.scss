@@ -1,0 +1,10 @@
+.box{
+	background: #e3e3e3;
+	width: 100%;
+	border: 1px solid #dfdfdf;
+	border-top-color: #d4d4d4;
+	border-radius: $border-radius;
+	padding: 50px;
+	position: relative;
+	z-index: 1;
+}
